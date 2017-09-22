@@ -9,18 +9,14 @@ import java.sql.Date;
 @Entity
 @Table(name = "rooms")
 public class Rooms {
-
-
-    @Column(name = "hotelid", nullable = false)
-    private int hotelid;
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "hotelid", nullable = false)
+    private int hotelid;
     @Column(name = "roomid", nullable = false)
     private int roomid;
     @Column(name = "roomname", nullable = false)
     private String roomname;
-    @Column(name = "price", nullable = false)
-    private int price;
     @Column(name = "isitfree", nullable = false)
     private boolean isItFree;
     @Column(name = "smoking", nullable = false)
@@ -52,14 +48,6 @@ public class Rooms {
 
     public void setRoomname(String roomname) {
         this.roomname = roomname;
-    }
-
-    public int getPrice() {
-        return price;
-    }
-
-    public void setPrice(int price) {
-        this.price = price;
     }
 
     public boolean isItFree() {

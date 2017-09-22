@@ -23,9 +23,9 @@ public class RoomsController {
         return new ResponseEntity<>(rooms, HttpStatus.OK);
     }
 
-    @RequestMapping("/v1/hotels/hotel/{hotelid}/rooms")
-    public ResponseEntity<?> roomPricesForAHotel(@PathVariable("hotelid") int hotelid) {
-        List<Rooms> rooms = roomsDAO.findByhotelid(hotelid);
+    @RequestMapping("/v1/hotels/hotel/{hotelId}/rooms")
+    public ResponseEntity<?> roomPricesForAHotel(@PathVariable("hotelId") int hotelId) {
+        List<Rooms> rooms = roomsDAO.findByhotelid(hotelId);
         return new ResponseEntity<>(rooms, HttpStatus.OK);
     }
 }
