@@ -2,3 +2,5 @@ INSERT INTO rooms (hotelid,roomid,roomname,isitfree,smoking,datefrom,dateuntil) 
 INSERT INTO rooms (hotelid,roomid,roomname,isitfree,smoking,datefrom,dateuntil) VALUES ('1','2','Double Bed Standard','true','false',null,null);
 INSERT INTO rooms (hotelid,roomid,roomname,isitfree,smoking,datefrom,dateuntil) VALUES ('2','3','Single Bed Standard','true','false',null,null);
 
+INSERT INTO rooms (hotelid,roomid,roomname,isitfree,smoking,datefrom,dateuntil) VALUES ('5','4','Single Bed Standard','true','false',null,null);
+INSERT INTO rooms (hotelid,roomid,roomname,isitfree,smoking,datefrom,dateuntil) VALUES ('5','5','Single Bed Standard','true','false',null,null);
