@@ -9,10 +9,10 @@ import java.sql.Date;
 @Entity
 @Table(name = "rooms")
 public class Rooms {
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "hotelid", nullable = false)
     private int hotelid;
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "roomid", nullable = false)
     private int roomid;
     @Column(name = "roomname", nullable = false)
